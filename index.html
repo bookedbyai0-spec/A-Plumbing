@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A+ Plumbing - Honest, Fast, Owner-Operated Plumbing</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333333;
+            background-color: #FFFFFF;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #003366;
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #C0C0C0;
+        }
+        .btn-secondary {
+            background-color: #333333;
+        }
+        .btn-secondary:hover {
+            background-color: #C0C0C0;
+        }
+        /* Sticky Call Button (Mobile) */
+        .sticky-call {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        @media (max-width: 768px) {
+            .sticky-call {
+                display: block;
+            }
+        }
+        /* Header */
+        header {
+            background-color: #003366;
+            color: #FFFFFF;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #C0C0C0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        /* Hero */
+        .hero {
+            background-image: url('https://source.unsplash.com/featured/?modern-kitchen-plumber'); /* Replace with real image */
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        .hero-content {
+            background: rgba(0, 51, 102, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        /* Trust Signals */
+        .trust-bar {
+            background-color: #333333;
+            color: #FFFFFF;
+            padding: 10px 0;
+            text-align: center;
+        }
+        /* Sections */
+        section {
+            padding: 60px 0;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .service-card {
+            background-color: #003366;
+            color: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .value-stack {
+            background-color: #F5F5F5;
+            padding: 40px;
+        }
+        .value-stack ul {
+            list-style: none;
+            padding: 0;
+        }
+        .value-stack li {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .testimonials {
+            background-color: #FFFFFF;
+        }
+        .testimonial-carousel {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+        }
+        .testimonial {
+            min-width: 300px;
+            background-color: #F5F5F5;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .owner-spotlight {
+            text-align: center;
+            background-color: #003366;
+            color: #FFFFFF;
+            padding: 40px;
+        }
+        .closing-cta {
+            background-color: #333333;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 40px;
+        }
+        /* Footer */
+        footer {
+            background-color: #003366;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+    <!-- Google Fonts for Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sticky Call Button -->
+    <a href="tel:555-123-4567" class="btn sticky-call">Call Now: 555-123-4567</a>
+
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">A+ Plumbing</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="tel:555-123-4567" class="btn">Emergency Call</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Plumbing Emergencies? Call the Owner Directly—Fast, Honest, and Done Right.</h1>
+            <p>Norman Alambar and his team show up same-day, fix it right the first time, and respect your home like it's our own. No corporate nonsense, just reliable service you can trust.</p>
+            <a href="tel:555-123-4567" class="btn">Call Now for Emergency Help</a>
+            <a href="#contact" class="btn btn-secondary">Schedule Service</a>
+        </div>
+    </section>
+
+    <!-- Trust Signals -->
+    <div class="trust-bar">
+        <p>5-Star Rated | 20+ Years Experience | Owner-Operated | Licensed & Insured</p>
+    </div>
+
+    <!-- Services Snapshot -->
+    <section class="container">
+        <h2>Our Premium Plumbing Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Emergency Plumbing</h3>
+                <p>24/7 Response for Leaks & Clogs</p>
+                <a href="#services" class="btn">Learn More</a>
+            </div>
+            <div class="service-card">
+                <h3>Water Heaters</h3>
+                <p>Installation & Repair with Lifetime Warranties</p>
+                <a href="#services" class="btn">Learn More</a>
+            </div>
+            <div class="service-card">
+                <h3>Sewer & Drain</h3>
+                <p>Expert Cleaning & Repairs</p>
+                <a href="#services" class="btn">Learn More</a>
+            </div>
+            <div class="service-card">
+                <h3>Fixture Upgrades</h3>
+                <p>Luxury Installations for Modern Homes</p>
+                <a href="#services" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why A+ Plumbing Value Stack -->
+    <section class="value-stack container">
+        <h2>Why Homeowners Choose Us</h2>
+        <ul>
+            <li><strong>Speed:</strong> Same-day service, weekends, and emergencies—when you need us most.</li>
+            <li><strong>Honesty:</strong> Fair pricing, no hidden fees, no upsells. We quote upfront and stick to it.</li>
+            <li><strong>Cleanliness:</strong> We leave your home spotless, with attention to every detail.</li>
+            <li><strong>Owner Involvement:</strong> Norman handles your job personally—call him directly for accountability.</li>
+            <li><strong>Reliability:</strong> Professional, kind service that turns stressful situations into calm resolutions.</li>
+        </ul>
+        <a href="tel:555-123-4567" class="btn">Ready to Experience the Difference? Call Today.</a>
+    </section>
+
+    <!-- Featured Testimonials -->
+    <section class="testimonials container">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-carousel">
+            <div class="testimonial">
+                <p>"Norman arrived within hours on a Sunday, fixed our burst pipe with no mess, and charged exactly what he quoted. He's our plumber for life!"</p>
+                <p><strong>– Sarah T.</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"In a panic over a leaking toilet, I called A+ Plumbing. They were calm, fast, and honest—felt like family helping out."</p>
+                <p><strong>– Mike R.</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"No BS, just great work. Norman explained everything and respected our home. Highly recommend!"</p>
+                <p><strong>– Emily L.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Owner Spotlight -->
+    <section class="owner-spotlight container">
+        <img src="https://source.unsplash.com/featured/?confident-man-plumber" alt="Norman Alambar" style="width: 200px; border-radius: 50%; margin-bottom: 20px;"> <!-- Replace with real photo -->
+        <h2>Meet Norman—Your Trusted Plumber</h2>
+        <p>With over 20 years in the trade, Norman founded A+ Plumbing to deliver the honest, owner-operated service big corporations can't match. He's on every call, ensuring quality and care. "We show up, we fix it right, and we respect your home."</p>
+        <a href="tel:555-123-4567" class="btn">Call Norman Directly: 555-123-4567</a>
+    </section>
+
+    <!-- Service Area -->
+    <section class="container">
+        <h2>Serving [Local Area]</h2>
+        <p>Proudly serving [Local Area] and surrounding neighborhoods. Wherever you are, we're ready to help.</p>
+        <!-- Embed a simple map here, e.g., Google Maps iframe -->
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="closing-cta">
+        <h2>Don't Wait for a Plumbing Crisis. Call A+ Plumbing Today.</h2>
+        <a href="#contact" class="btn">Get Started Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 A+ Plumbing. BBB Accredited | Licensed & Insured. Serving [Local Area].</p>
+        <a href="tel:555-123-4567" class="btn">Call Us</a>
+    </footer>
+</body>
+</html>
